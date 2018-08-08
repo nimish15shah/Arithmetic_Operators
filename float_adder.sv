@@ -97,22 +97,12 @@ module flt_add #(
     end
 
     // Exponent calculation
-//    if (exp1<exp2) begin
     if (dExpS[EXP_W]) begin
       expSel = exp2;
     end else begin
       expSel = exp1;
     end
     
-    /*expInc = expSel+1;
-    // Steven's condition:
-    // increment = ((expSel=='b0 && man_raw[MAN_W+1])||(expSel!='b0&&(man_raw[MAN_W+2]==1||manRound[MAN_W+1]==1)));
-    increment = man_raw[MAN_W+2]==1 || manRound[MAN_W+1]==1;
-    if (increment)
-      expPreOverflow = expInc;
-    else
-      expPreOverflow = {1'b0,expSel};
-    */  
     expPreOverflow = {1'b0,expSel} + (man_raw[MAN_W+2]==1 || manRound[MAN_W+1]==1);
 
     // Overflow detection
