@@ -12,7 +12,7 @@ Library contails verilog modules for parametric floating and fixed-point operato
 # Properties of Floating-point operators:
 * Custom exponent length and mantissa length
 * Unsigned
-* Two flavors: One supporting only normalized numbers, another also supporting denormalized numbers
+* Supports only normalized numbers 
 * Overflow and Underflow handling: Set output to highest and lowest possible values respectively
 * Combinational block/ Not clocked/ Not pipelined
 * No sign bit as only unsigned numbers are supported
