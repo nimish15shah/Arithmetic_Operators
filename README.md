@@ -1,6 +1,6 @@
 # Arithmetic_Operators
 
-Library contails verilog modules for parametric floating and fixed-point operators.
+The library contains verilog modules for parametric floating- and fixed-point operators.
 
 # Properties of Fixed-point operators:
 * Custom integer length and fraction length
