@@ -1,7 +1,7 @@
 ///////////////////////////////
 //////    Float Mult    / ////
 ///////////////////////////////
-module flt_mul # (parameter EXP_L=`part_1_len, MNT_L=`part_2_len)( //EXP_L should not be less than 3
+module flt_mul # (parameter EXP_L=8, MNT_L=23)( //EXP_L should not be less than 3
     input [EXP_L+MNT_L-1:0] in1, 
     input [EXP_L+MNT_L-1:0] in2, 
     output [EXP_L+MNT_L-1:0] out 
