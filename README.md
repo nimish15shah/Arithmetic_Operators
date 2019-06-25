@@ -1,4 +1,4 @@
-# Arithmetic_Operators
+# Arithmetic Operators
 
 The library contains verilog modules for parametric floating- and fixed-point operators.
 
